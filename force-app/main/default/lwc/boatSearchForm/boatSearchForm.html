@@ -1,0 +1,15 @@
+<template>
+  <lightning-card>
+      <lightning-layout horizontal-align="center" vertical-align="end">
+      <lightning-layout-item class="slds-align-middle" padding="horizontal-medium">
+          <lightning-combobox variant="label-hidden"
+            label="Boat Type"
+            value={selectedBoatTypeId}
+            placeholder="All Types"
+            options={searchOptions}
+            onchange={handleSearchOptionChange} class="slds-align-middle">
+          </lightning-combobox>
+      </lightning-layout-item>
+    </lightning-layout>
+  </lightning-card>
+</template>
